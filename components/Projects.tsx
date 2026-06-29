@@ -8,6 +8,8 @@ const projects = [
       "A sleek and user-friendly prototype for a local ride-hailing mobile app, designed with Flutter.",
     tags: ["Flutter", "Dart", "Firebase", "UI/UX"],
     image: "/images/project-flikchat.jpg",
+    github: "https://github.com/beckdg/bishoftu-ride",
+    site: "https://bishofturide.vercel.app",
   },
   {
     title: "CampusCraft",
@@ -15,6 +17,8 @@ const projects = [
       "A web platform for students to network, showcase their projects, and collaborate.",
     tags: ["React", "Node.js", "MongoDB", "Express"],
     image: "/images/project-campus-craft.jpg",
+    github: "https://github.com/beckdg/campus-craft",
+    site: "https://campuscraft.vercel.app",
   },
   {
     title: "Oda Shop Manager",
@@ -22,6 +26,8 @@ const projects = [
       "A comprehensive Point of Sale (POS) and inventory management system for stationery shops.",
     tags: ["React", "Firebase", "TailwindCSS"],
     image: "/images/project-oda-shop.jpg",
+    github: "https://github.com/beckdg/oda-shop-manager",
+    site: "https://odashop.vercel.app",
   },
   {
     title: "EventHub",
@@ -29,6 +35,8 @@ const projects = [
       "A full-featured web application for booking and ticketing events, from concerts to workshops.",
     tags: ["Next.js", "Stripe", "PostgreSQL"],
     image: "/images/project-event-hub.jpg",
+    github: "https://github.com/beckdg/event-hub",
+    site: "https://eventhub.vercel.app",
   },
   {
     title: "FitLife Tracker",
@@ -36,6 +44,8 @@ const projects = [
       "A mobile app to help users track their fitness goals, log workouts, and monitor progress over time.",
     tags: ["Flutter", "SQLite", "Provider"],
     image: "/images/project-fitlife.jpg",
+    github: "https://github.com/beckdg/fitlife-tracker",
+    site: "https://fitlife.vercel.app",
   },
 ];
 
@@ -44,6 +54,8 @@ const ProjectCard: React.FC<(typeof projects)[0]> = ({
   description,
   tags,
   image,
+  github,
+  site,
 }) => (
   <div className="group relative flex flex-col rounded-lg overflow-hidden glass-morphism transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#64ffda]/20">
     <img
@@ -66,13 +78,17 @@ const ProjectCard: React.FC<(typeof projects)[0]> = ({
       </div>
       <div className="mt-auto pt-4 flex items-center justify-end space-x-4 text-2xl text-[#a8b2d1]">
         <a
-          href="#"
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover:text-[#64ffda] transition-colors duration-300"
         >
           <FaGithub />
         </a>
         <a
-          href="#"
+          href={site}
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover:text-[#64ffda] transition-colors duration-300"
         >
           <FaExternalLinkAlt />
