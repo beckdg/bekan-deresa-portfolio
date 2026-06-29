@@ -13,6 +13,14 @@ const About: React.FC = () => {
           <p>
             I'm Bekan Deresa — a full-stack and mobile developer from Addis Ababa & Bishoftu, Ethiopia. I build web and mobile apps, ERP systems, and specialize in AI training and intelligent agent development.
           </p>
+          <div className="glass-morphism border-l-4 border-[#64ffda] rounded-lg p-5 my-6">
+            <p className="text-[#ccd6f6] font-medium">
+              <span className="text-[#64ffda] text-xl">🎓</span> I graduated from{" "}
+              <span className="text-[#64ffda] font-semibold">Adama Science and Technology University</span> in 2026
+              with a <span className="text-[#64ffda] font-semibold">BSc in Software Engineering</span> —
+              <span className="text-[#64ffda] font-semibold"> Very Great Distinction</span>.
+            </p>
+          </div>
           <p>
             I love turning complex problems into simple, elegant solutions — whether it's a responsive frontend, a scalable backend, or a smart AI-powered workflow.
           </p>
