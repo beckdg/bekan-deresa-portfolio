@@ -102,7 +102,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-24">
       <h2 className="text-3xl font-bold text-center mb-12 text-[#ccd6f6] flex items-center justify-center gap-4">
-        <span className="text-[#64ffda] font-mono">03.</span> My Projects
+        <span className="text-[#64ffda] font-mono">04.</span> My Projects
         <span className="h-px w-24 bg-[#233554] hidden md:block"></span>
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

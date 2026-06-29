@@ -11,21 +11,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         font-family: 'Poppins', sans-serif;
         background-color: #0a192f;
         color: #ccd6f6;
       }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a192f;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #233554;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #64ffda;
+      }
+
       .glass-morphism {
         background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.1);
       }
-       .floating-label-group {
+      .floating-label-group {
         position: relative;
       }
-
       .floating-label {
         position: absolute;
         top: 50%;
@@ -35,7 +51,6 @@
         pointer-events: none;
         color: #8892b0;
       }
-
       .floating-input:focus ~ .floating-label,
       .floating-input:not(:placeholder-shown) ~ .floating-label {
         top: 0;
@@ -43,6 +58,31 @@
         background-color: #0a192f;
         padding: 0 0.25rem;
         color: #64ffda;
+      }
+
+      /* Typing animation */
+      .typing-cursor {
+        display: inline-block;
+        width: 3px;
+        height: 1em;
+        background: #64ffda;
+        margin-left: 4px;
+        animation: blink 0.8s step-end infinite;
+        vertical-align: text-bottom;
+      }
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+
+      /* Scroll reveal */
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
       }
     </style>
   <script type="importmap">

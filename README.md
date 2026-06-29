@@ -1,20 +1,76 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img src="/images/about.jpg" alt="Bekan Deresa" width="120" style="border-radius: 50%;" />
+  <h1 align="center">Bekan Deresa</h1>
+  <p align="center">
+    <strong>Full-Stack & Mobile Developer | AI & ERP Specialist</strong>
+    <br />
+    Addis Ababa & Bishoftu, Ethiopia
+  </p>
+
+  <p align="center">
+    <a href="mailto:bekanderesa27@gmail.com">Email</a>
+    ·
+    <a href="https://github.com/beckdg">GitHub</a>
+    ·
+    <a href="https://linkedin.com/in/beckdg">LinkedIn</a>
+  </p>
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+## Portfolio Website
 
-View your app in AI Studio: https://ai.studio/apps/drive/1sO7pYWDZBKmZCK10pBJT1MZ3h0E301ti
+My personal portfolio built with React and Tailwind CSS — showcasing my projects, skills, and experience in full-stack development, mobile apps, ERP systems, and AI/agent development.
 
-## Run Locally
+### Tech Stack
 
-**Prerequisites:**  Node.js
+- **Framework:** React 19 + TypeScript
+- **Styling:** Tailwind CSS
+- **Build Tool:** Vite
+- **Icons:** React Icons
 
+### Features
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Modern dark-themed responsive design
+- Animated typing hero section
+- Skills grid with devops, cloud, and AI technologies
+- Project showcase with GitHub and live demo links
+- Experience timeline
+- Contact form with email integration
+- Scroll-to-top button
+- Smooth scroll animations
+
+### Sections
+
+| # | Section | Description |
+|---|---------|-------------|
+| 01 | Hero | Intro with typing animation & resume link |
+| 02 | About | Brief background & photo |
+| 03 | Skills | 21 technical skills including AI, DevOps, cloud |
+| 04 | Experience | Work & project timeline |
+| 05 | Projects | 5 featured projects with links |
+| 06 | Contact | Form that opens email client |
+
+### Getting Started
+
+```bash
+git clone https://github.com/beckdg/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build
+
+```bash
+npm run build
+npm run preview
+```
+
+### Contact
+
+- **Email:** [bekanderesa27@gmail.com](mailto:bekanderesa27@gmail.com)
+- **GitHub:** [github.com/beckdg](https://github.com/beckdg)
+- **Location:** Addis Ababa & Bishoftu, Ethiopia

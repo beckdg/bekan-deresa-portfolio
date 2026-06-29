@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
   return (
     <section id="skills" className="py-24">
       <h2 className="text-3xl font-bold text-center mb-12 text-[#ccd6f6] flex items-center justify-center gap-4">
-        <span className="text-[#64ffda] font-mono">02.</span> My Skills
+        <span className="text-[#64ffda] font-mono">03.</span> My Skills
         <span className="h-px w-24 bg-[#233554] hidden md:block"></span>
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">

@@ -11,7 +11,7 @@ const About: React.FC = () => {
       <div className="grid md:grid-cols-5 gap-12 items-center">
         <div className="md:col-span-3 text-lg text-[#8892b0] space-y-4">
           <p>
-            I'm Bekan Deresa — a full-stack and mobile developer from Bishoftu, Ethiopia. I build web and mobile apps, ERP systems, and specialize in AI training and intelligent agent development.
+            I'm Bekan Deresa — a full-stack and mobile developer from Addis Ababa & Bishoftu, Ethiopia. I build web and mobile apps, ERP systems, and specialize in AI training and intelligent agent development.
           </p>
           <p>
             I love turning complex problems into simple, elegant solutions — whether it's a responsive frontend, a scalable backend, or a smart AI-powered workflow.

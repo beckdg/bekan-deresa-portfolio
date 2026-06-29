@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-24 text-center">
       <h2 className="text-3xl font-bold text-center mb-4 text-[#ccd6f6] flex items-center justify-center gap-4">
-        <span className="text-[#64ffda] font-mono">04.</span> Get In Touch
+        <span className="text-[#64ffda] font-mono">05.</span> Get In Touch
       </h2>
       <p className="text-[#8892b0] mb-12 max-w-xl mx-auto">
         I'm currently open to new opportunities and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!
