@@ -24,11 +24,11 @@ const experiences = [
       "Built responsive web applications using React, TailwindCSS, and Node.js. Delivered custom dashboards, e-commerce sites, and inventory management systems for local businesses.",
   },
   {
-    year: "2021 – 2022",
-    role: "Junior Developer",
-    company: "Freelance",
+    year: "2024 – 2025",
+    role: "Intern",
+    company: "Maedot Educational Technology",
     description:
-      "Started my development journey building static websites and simple web apps. Gained proficiency in HTML, CSS, JavaScript, and Git through hands-on client projects.",
+      "Developed and optimized digital learning applications by writing clean, efficient code for responsive user features. Collaborated with cross-functional engineering teams using Agile methodologies to debug issues and improve system performance. Bridged academic software engineering concepts with industry practice to enhance overall application user experience.",
   },
 ];
 
