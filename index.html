@@ -1,104 +1,85 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bekan Deresa | Web & Mobile Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #0a192f;
-        color: #ccd6f6;
-      }
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #0a192f;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #233554;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #64ffda;
-      }
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-      .glass-morphism {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-      .floating-label-group {
-        position: relative;
-      }
-      .floating-label {
-        position: absolute;
-        top: 50%;
-        left: 1rem;
-        transform: translateY(-50%);
-        transition: all 0.2s ease-in-out;
-        pointer-events: none;
-        color: #8892b0;
-      }
-      .floating-input:focus ~ .floating-label,
-      .floating-input:not(:placeholder-shown) ~ .floating-label {
-        top: 0;
-        transform: translateY(-50%) scale(0.85);
-        background-color: #0a192f;
-        padding: 0 0.25rem;
-        color: #64ffda;
-      }
+    <!-- Primary meta -->
+    <title>Bekan Deresa — Full-Stack, Mobile & AI Developer</title>
+    <meta
+      name="description"
+      content="Bekan Deresa is a full-stack, mobile, and AI developer from Ethiopia building fast, reliable web apps, cross-platform mobile experiences, ERP systems, and intelligent AI agents."
+    />
+    <meta name="author" content="Bekan Deresa" />
+    <meta
+      name="keywords"
+      content="Bekan Deresa, Full-Stack Developer, Mobile Developer, Flutter, React, AI Developer, ERP, Ethiopia, Software Engineer, Portfolio"
+    />
+    <meta name="theme-color" content="#0a192f" />
 
-      /* Typing animation */
-      .typing-cursor {
-        display: inline-block;
-        width: 3px;
-        height: 1em;
-        background: #64ffda;
-        margin-left: 4px;
-        animation: blink 0.8s step-end infinite;
-        vertical-align: text-bottom;
-      }
-      @keyframes blink {
-        50% { opacity: 0; }
-      }
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bekan Deresa — Full-Stack, Mobile & AI Developer" />
+    <meta
+      property="og:description"
+      content="Full-stack, mobile & AI developer building web apps, mobile experiences, ERP systems, and intelligent agents."
+    />
+    <meta property="og:image" content="/images/about.jpg" />
 
-      /* Scroll reveal */
-      .reveal {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bekan Deresa — Full-Stack, Mobile & AI Developer" />
+    <meta
+      name="twitter:description"
+      content="Full-stack, mobile & AI developer building web apps, mobile experiences, ERP systems, and intelligent agents."
+    />
+    <meta name="twitter:image" content="/images/about.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Prevent theme flash -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("bdg-theme");
+          var prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+          var theme = stored || (prefersLight ? "light" : "dark");
+          document.documentElement.classList.remove("dark", "light");
+          document.documentElement.classList.add(theme);
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bekan Deresa",
+        "jobTitle": "Full-Stack, Mobile & AI Developer",
+        "email": "mailto:bekanderesa27@gmail.com",
+        "url": "https://github.com/beckdg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Addis Ababa & Bishoftu",
+          "addressCountry": "Ethiopia"
+        },
+        "sameAs": [
+          "https://github.com/beckdg",
+          "https://linkedin.com/in/beckdg"
+        ]
       }
-      .reveal.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react-icons/": "https://aistudiocdn.com/react-icons@^5.5.0/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+    </script>
+  </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
