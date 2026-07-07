@@ -32,7 +32,7 @@ import {
 /* -------------------------------------------------------------------------- */
 export const profile = {
   name: "Bekan Deresa",
-  initials: "BD",
+  initials: "BDG",
   roles: [
     "Full-Stack Developer",
     "Mobile App Developer",
@@ -75,7 +75,7 @@ export const navLinks = [
 /* -------------------------------------------------------------------------- */
 export const stats = [
   { value: 4, suffix: "+", label: "Years building" },
-  { value: 30, suffix: "+", label: "Projects shipped" },
+  { value: 10, suffix: "+", label: "Projects shipped" },
   { value: 20, suffix: "+", label: "Technologies" },
   { value: 15, suffix: "+", label: "Happy clients" },
 ];
@@ -261,9 +261,30 @@ export type Project = {
   featured?: boolean;
   category: "Web" | "Mobile" | "AI" | "ERP";
   accent: [string, string];
+  /** Optional thumbnail, e.g. "/images/flikchat.jpg". Falls back to a gradient. */
+  image?: string;
 };
 
 export const projects: Project[] = [
+  {
+    title: "FlikChat",
+    description:
+      "A modern AI-powered community Q&A platform where users ask questions, share knowledge, discover trending discussions, and receive intelligent assistance through a clean, social-media-inspired experience.",
+    tags: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "AI",
+      "Tailwind CSS"
+    ],
+    github: "https://github.com/beckdg/flikchat",
+    site: "https://flik-chat.vercel.app",
+    featured: true,
+    category: "Web",
+    accent: ["#22c55e", "#3b82f6"],
+  },
   {
     title: "Bishoftu Ride",
     description:
@@ -275,17 +296,7 @@ export const projects: Project[] = [
     category: "Mobile",
     accent: ["#54c5f8", "#2dd4bf"],
   },
-  {
-    title: "CampusCraft",
-    description:
-      "A web platform where students network, showcase projects, and collaborate — complete with profiles, project feeds, and real-time interaction.",
-    tags: ["React", "Node.js", "MongoDB", "Express"],
-    github: "https://github.com/beckdg/campus-craft",
-    site: "https://campuscraft.vercel.app",
-    featured: true,
-    category: "Web",
-    accent: ["#61dafb", "#3c873a"],
-  },
+ 
   {
     title: "Oda Shop Manager",
     description:

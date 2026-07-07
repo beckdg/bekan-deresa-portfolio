@@ -22,10 +22,21 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
         backgroundImage: `linear-gradient(135deg, ${project.accent[0]}, ${project.accent[1]})`,
       }}
     >
-      <div className="pointer-events-none absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_1px_1px,#000_1px,transparent_0)] [background-size:16px_16px]" />
-      <span className="relative select-none text-6xl font-black text-white/90 drop-shadow">
-        {project.title.charAt(0)}
-      </span>
+      {project.image ? (
+        <img
+          src={project.image}
+          alt={`${project.title} preview`}
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      ) : (
+        <>
+          <div className="pointer-events-none absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_1px_1px,#000_1px,transparent_0)] [background-size:16px_16px]" />
+          <span className="relative select-none text-6xl font-black text-white/90 drop-shadow">
+            {project.title.charAt(0)}
+          </span>
+        </>
+      )}
       {project.featured && (
         <span className="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full bg-black/40 px-2.5 py-1 text-xs font-medium text-white backdrop-blur">
           <FiStar size={12} /> Featured
