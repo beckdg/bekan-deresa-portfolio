@@ -284,6 +284,7 @@ export const projects: Project[] = [
     featured: true,
     category: "Web",
     accent: ["#22c55e", "#3b82f6"],
+    image: "/images/flikchat.png",
   },
   {
     title: "Bishoftu Ride",
