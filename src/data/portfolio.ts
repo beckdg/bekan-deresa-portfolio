@@ -286,18 +286,27 @@ export const projects: Project[] = [
     accent: ["#22c55e", "#3b82f6"],
     image: "/images/flikchat.png",
   },
-  {
-    title: "Bishoftu Ride",
-    description:
-      "A sleek, user-friendly ride-hailing mobile app prototype for a local market — real-time trip flow, map integration, and a polished onboarding experience.",
-    tags: ["Flutter", "Dart", "Firebase", "UI/UX"],
-    github: "https://github.com/beckdg/bishoftu-ride",
-    site: "https://bishofturide.vercel.app",
-    featured: true,
-    category: "Mobile",
-    accent: ["#54c5f8", "#2dd4bf"],
-  },
- 
+{
+  title: "ScholarAI",
+  description:
+    "A full-stack AI-powered learning platform that transforms study materials into interactive learning experiences. Upload documents, generate intelligent summaries, flashcards, quizzes, semantic search, and chat with an AI tutor using Retrieval-Augmented Generation (RAG) for personalized learning.",
+  tags: [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Google Gemini AI",
+    "RAG",
+    "Tailwind CSS"
+  ],
+  github: "https://github.com/beckdg/ScholarsAI-AI-powered-learning-platform.git",
+  site: "https://scholarai-navy.vercel.app",
+  featured: true,
+  category: "Web",
+  accent: ["#0F766E", "#4F46E5"],
+  image: "/images/scholarai.png",
+},
   {
     title: "Oda Shop Manager",
     description:
